@@ -5,61 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Apple</title>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style>
-    .navbar {
-        font-family: Avanta Garde;
-        font-style: normal;
-        justify-content: unsafe center; 
-        justify-content: space-around;
-        display: flex;
+
+    *,
+    *::before
+
+    *::after {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 12px;
+        font-family: 'SF pro Display',sans-serif;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+
+    .containr {
+        max-width: 98rem;
+        margin: 0 auto;
+        padding: 4.4rem;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        z-index: 1400;
         width: 100%;
-        background-color: black;
-        max-height: 30px;
+        height: 4.4rem;
+        background-color: rgba(0,0,0, .8);
+        backdrop-filter: blur(2rem);
     }
 
-
-    s1 {
-        background-image:url(images/Iphone1.jpg);
-        background-size: auto;
-        background-repeat: ;
-        background-position: center center; 
-        padding-top: 20px;
-        padding-bottom: 10px;
-        justify-content: center;
+    .nav-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 -1rem;
     }
 
-s2 {
-
-}
-
-NavColor {
-    color: ;
-}
-    Spaced-Text {
-    }
-    #Header-img {
-        width: 90px;
-        height: 40px;
-        float: left;
-        padding-top: 1.7em;
+    .nav-list-mobile {
+        display: none;
     }
 
-    header li {
-
-
+    nav-link {
+        font-size: 1.4rem;
+        color: #fff;
+        padding: 0 1rem;
+        transition: opacity;
     }
 
-    @media only screen and (max-width: 500px) {
+    .nav-link:hover {
+        opacity: .7;
     }
 
-    @media only screen and (max-width: ) {
+    nav-link-apple {
+        width: 1.6rem;
+        height: 4.4rem;
+        background: url("Images/Icons/apple.svg")center no-repeat;
     }
 
-    @media only screen and (max-width: ) {
+    nav-link-search {
+        width: 1.6rem;
+        height: 4.4rem;
+        background: url("Images/search.svg") center no-repeat;
     }
+    nav-link-bag {
+        width: 1.4rem;
+        height: 4.4rem;
+        background: url("Images/bag.svg") center no-repeat;
+    }
+
+    .iPhone-Se {
+     
+        background: url("Images/hero/iphone-se.jpg");
+        margin-top: 4.4rem;
+    }
+    /*iPhone SE section*/
+    .hero{
+        height: 69.2rem;
+        background-size: auto 73.6rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-top: .6rem #fff;
+        border-bottom: .6rem #fff;
+    }
+
+    .iPhone-se {
+        border-top: none;
+    }
+
+  .title-heading{
+      font-size: 5.6rem;
+      line-height: 1.07143;
+      letter-spacing:-.008rem;
+      color:white;
+      text-align: center;
+      }
+
+  .title-sub-heading {
+      font-size: 2.65rem;
+      margin-top: .6rem;
+      letter-spacing: .008rem;
+      font-weight: 400;
+      color:white;
+      text-align: center;
+  }
+
+  .title-price {
+      font-size: 1.7rem;
+      color: #888;
+      margin-top: .68rem;
+      text-align: center;
+  }
+  
+  .cta {
+text-align: center;
+margin-top: 1.8rem;
+  }
+
+  .cta-link{
+      color: #66bbff;
+      font-size: 2.1rem;
+      display: inline-block;
+
+  }
+
+  .cta-link:ntn-child(2){
+      margin-left: 2.6rem;
+
+  }
+
+  .cta-link:hover {
+      border-bottom: 2px solid #66bbff;
+
+  }
+
+/*iPhone 11 section*/
+
+
 </style>
 
 <header>
@@ -76,7 +167,7 @@ NavColor {
                     <a href="index.html" class="nav-link nav-link-apple"></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link nav-link-bag></a>
+                    <a href="#" class="nav-link nav-link-bag"></a>
                 </li>
             </ul>
             <!-- Nav-list Nav-list-mobile -->
@@ -85,67 +176,97 @@ NavColor {
                     <a href="index.html" class="nav-link nav-link-apple"></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link>Mac</a>
+                    <a href="#" class="nav-link">Mac</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link>ipad</a>
+                    <a href="#" class="nav-link">ipad</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link>iPhone</a>
+                    <a href="#" class="nav-link">iPhone</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link>Watch</a>
+                    <a href="#" class="nav-link">Watch</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link>TV</a>
+                    <a href="#" class="nav-link">TV</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link>Music</a>
+                    <a href="#" class="nav-link">Music</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link nav-link>Support</a>
+                    <a href="#" class="nav-link">Support</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link nav-link-search></a>
+                    <a href="#" class="nav-link nav-link-search"></a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link nav-link-bag></a>
+                <li class="nav-item nav-item-hidden">
+                    <a href="#" class="nav-link nav-link-bag"></a>
                 </li>
 
        </nav>
     </div>
 </header>
 
+
 <body>
-    <!--The S1 Container is currently under review.-->
-    <section>
-        <h1 font-family="Georgia,Serif" font-weight=Bold;>iPhone SE</h1>
-        <article>
-            <h3 font-family="Times,serif" style="color:white">Lots to Love. Less to spend</h3>
-            <h3 font-family="Times,serif" style="color:white" ;> Starting $399.</h3>
-            <h4 style="color: gray;">From $9.54/mo or $229 with trade-in.</h4>
-        </article>
-        <pre style="color: blue;font-size:18px;">Learn More > Buy ></pre>
+    <section class="iPhone-Se">
+        <div class="container">
+            <div class="title">
+                <h1 class="title-heading">iPhone Se</h1>
+                <h3 class="title-sub-heading">Lots to love. Less to spend. Starting at $399.</h3>
+                <p class="title-price">From $9.54/mo/ or $229with trade-in.</p>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link">Learn more > </a>
+                <a href="#" class="cta-link">Buy > </a>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;Font-style: oblique;font-weight:bold;">iPhone 11</h1>
-          <article>
-            <h3 Style="font-family:Arial, Helvetica, sans-serif;">Just the right amount of everything.</h3>
-            <h4 style="color:lightgrey">From $18.70/mo. or $449 with trade-in.</h4>
-          </article>
-        <pre style="color: blue;font-size:18px;">Learn More > Buy ></pre>
+    <section class="iPhone-11">
+        <div class="container">
+            <div class="title">
+                <h1 class="title-heading-iPhone11">iPhone 11</h1>
+                <h3 class="title-sub-heading">Just the right amount of everything.</h3>
+                <p class="title-price">From $19.96/mo/ or $479 with trade-in.</p>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link cta-link-darker">Learn more</a>
+                <a href="#" class="cta-link cta-link-darker">Buy</a>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h1>iPad Pro</h1>
-        <h3>Your Next computer is not a computer</h3>
-        <pre style="color: blue;font-size:18px;">Learn More > Buy ></pre>
+    <section class="Shop">
+        <div class="container">
+            <div class="title title-darker">
+                <h1 class="title-heading-Shop">Buy a Mac or iPad for college. Get Airpods</h1>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link cta-link-darker">shop</a>
+            </div>
+        </div>
     </section>
 
+    <!--Tom hanks movie/apple Tv must be added here-->
 
+    <section class="Mac">
+        <div class="container">
+            <div class="title">
+                <h1 class="title-heading-mac">Never Stop Making</h1>
+                <h3 class="title-sub-heading">Behind the mac with James Blake.</h3>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link">Listen now</a>
+                <a href="#" class="cta-lin">Shop mac</a>
+            </div>
+        </div>
+    </section>
 </body>
 
+
 <footer>
+
+
 </footer>
 </html>

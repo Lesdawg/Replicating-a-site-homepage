@@ -1,0 +1,66 @@
+﻿
+*,
+*::before
+
+*::after{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-size: 12px;
+    font-family:'SF pro Display',sans-serif;
+}
+
+a{
+
+    display: block;
+    text-decoration: none;
+}
+
+.containr{
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 4.4rem;
+
+}
+
+header{
+position: fixed;
+top: 0;
+z-index: 1400;
+height: 4.4rem;
+background-color: rgba(0,0,0,.8);
+backdrop-filter: blur(2rem);
+}
+
+.nav-list{
+    list-style: none;
+    dislay: flex;
+    align-items: center;
+    justify-content: space-between;
+    margim 0 -1rem;
+}
+
+.nav-list-mobile{
+    display: none;
+}
+
+nav-link{
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    transition: opacity;
+
+}
+
+.nav-link:hover{
+    opacity: .7;
+}
+
+nav-link-apple{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("Images/Icons/apple-logo.svg")
+}
