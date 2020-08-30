@@ -6,153 +6,10 @@
 
     <title>Apple</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="StyleSheet1.css"/> 
 </head>
-<style>
 
-    *,
-    *::before
-
-    *::after {
-        margin: 0;
-        padding: 0;
-    }
-
-    html {
-        font-size: 12px;
-        font-family: 'SF pro Display',sans-serif;
-    }
-
-    a {
-        display: block;
-        text-decoration: none;
-    }
-
-    .containr {
-        max-width: 98rem;
-        margin: 0 auto;
-        padding: 4.4rem;
-    }
-
-    header {
-        position: fixed;
-        top: 0;
-        z-index: 1400;
-        width: 100%;
-        height: 4.4rem;
-        background-color: rgba(0,0,0, .8);
-        backdrop-filter: blur(2rem);
-    }
-
-    .nav-list {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 -1rem;
-    }
-
-    .nav-list-mobile {
-        display: none;
-    }
-
-    nav-link {
-        font-size: 1.4rem;
-        color: #fff;
-        padding: 0 1rem;
-        transition: opacity;
-    }
-
-    .nav-link:hover {
-        opacity: .7;
-    }
-
-    nav-link-apple {
-        width: 1.6rem;
-        height: 4.4rem;
-        background: url("Images/Icons/apple.svg")center no-repeat;
-    }
-
-    nav-link-search {
-        width: 1.6rem;
-        height: 4.4rem;
-        background: url("Images/search.svg") center no-repeat;
-    }
-    nav-link-bag {
-        width: 1.4rem;
-        height: 4.4rem;
-        background: url("Images/bag.svg") center no-repeat;
-    }
-
-    .iPhone-Se {
-     
-        background: url("Images/hero/iphone-se.jpg");
-        margin-top: 4.4rem;
-    }
-    /*iPhone SE section*/
-    .hero{
-        height: 69.2rem;
-        background-size: auto 73.6rem;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-top: .6rem #fff;
-        border-bottom: .6rem #fff;
-    }
-
-    .iPhone-se {
-        border-top: none;
-    }
-
-  .title-heading{
-      font-size: 5.6rem;
-      line-height: 1.07143;
-      letter-spacing:-.008rem;
-      color:white;
-      text-align: center;
-      }
-
-  .title-sub-heading {
-      font-size: 2.65rem;
-      margin-top: .6rem;
-      letter-spacing: .008rem;
-      font-weight: 400;
-      color:white;
-      text-align: center;
-  }
-
-  .title-price {
-      font-size: 1.7rem;
-      color: #888;
-      margin-top: .68rem;
-      text-align: center;
-  }
-  
-  .cta {
-text-align: center;
-margin-top: 1.8rem;
-  }
-
-  .cta-link{
-      color: #66bbff;
-      font-size: 2.1rem;
-      display: inline-block;
-
-  }
-
-  .cta-link:ntn-child(2){
-      margin-left: 2.6rem;
-
-  }
-
-  .cta-link:hover {
-      border-bottom: 2px solid #66bbff;
-
-  }
-
-/*iPhone 11 section*/
-
-
-</style>
-
+<body>
 <header>
     <div class="container">
         <nav class="nav">
@@ -179,7 +36,7 @@ margin-top: 1.8rem;
                     <a href="#" class="nav-link">Mac</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">ipad</a>
+                    <a href="#" class="nav-link">iPad</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">iPhone</a>
@@ -207,12 +64,11 @@ margin-top: 1.8rem;
     </div>
 </header>
 
-
-<body>
+<section class="body">
     <section class="iPhone-Se">
         <div class="container">
             <div class="title">
-                <h1 class="title-heading">iPhone Se</h1>
+                <h1 class="title-heading">iPhone SE</h1>
                 <h3 class="title-sub-heading">Lots to love. Less to spend. Starting at $399.</h3>
                 <p class="title-price">From $9.54/mo/ or $229with trade-in.</p>
             </div>
@@ -227,7 +83,7 @@ margin-top: 1.8rem;
         <div class="container">
             <div class="title">
                 <h1 class="title-heading-iPhone11">iPhone 11</h1>
-                <h3 class="title-sub-heading">Just the right amount of everything.</h3>
+                <h3 class="title-sub-heading-11">Just the right amount of everything.</h3>
                 <p class="title-price">From $19.96/mo/ or $479 with trade-in.</p>
             </div>
             <div class="cta">
@@ -237,36 +93,141 @@ margin-top: 1.8rem;
         </div>
     </section>
 
-    <section class="Shop">
-        <div class="container">
-            <div class="title title-darker">
-                <h1 class="title-heading-Shop">Buy a Mac or iPad for college. Get Airpods</h1>
-            </div>
-            <div class="cta">
-                <a href="#" class="cta-link cta-link-darker">shop</a>
-            </div>
-        </div>
-    </section>
 
-    <!--Tom hanks movie/apple Tv must be added here-->
 
-    <section class="Mac">
+    <!--Ipad pro and 2 Apple pics must be added here-->
+
+    <section class="iPad-Pro">
         <div class="container">
             <div class="title">
-                <h1 class="title-heading-mac">Never Stop Making</h1>
-                <h3 class="title-sub-heading">Behind the mac with James Blake.</h3>
+                <h1 class="title-heading-iPad-Pro">iPad Pro</h1>
+                <h3 class="title-sub-heading-iPad-Pro">Your next computer is not a computer.</h3>
             </div>
             <div class="cta">
-                <a href="#" class="cta-link">Listen now</a>
-                <a href="#" class="cta-lin">Shop mac</a>
+                <a href="#" class="cta-link">Learn More</a>
+                <a href="#" class="cta-link">Buy</a>
             </div>
         </div>
     </section>
+
+    <div class="Bottom-section">
+    <section class="iWatch">
+        <div class="Bottom-image">
+            <div>
+                
+                <h1 class="title-heading-bottom">
+                    With the Always-OnRetina display. <br>
+                    You've neverseen a watch like this.
+                </h1>
+              
+            </div>
+            <div class="cta-1">
+                <a href="#" class="cta-link cta-link-darker">Learn More ></a>
+                <a href="#" class="cta-link cta-link-darker">Buy ></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="letter">
+        <div>
+            <div class="title title-darker">
+                <h1 class="title-heading-bottom-2">Apple's approach to <br> 
+                    reopening our stores</h1>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link cta-link-darker">Read the letter ></a>
+            </div>
+        </div>
+    </section>
+</div>
+</section>
+
+<footer id="mainFooter">
+    <div class="footer-container">
+        <ul class="Listed-Items">
+        <li>
+            <h3>Shop and Learn</h3>
+            <div><a href #="#">Mac</a></div>
+            <div><a href #="#">iPad</a></div>
+            <div><a href="#">iPhone</a></div>
+            <div><a href="#">Watch</a></div>
+            <div><a href="#">TV</a></div>
+            <div><a href="#">Music</a></div>
+            <div><a href="#">AirPods</a></div>
+            <div><a href="#">HomePod</a></div>
+            <div><a href="#">iPod touch</a></div>
+            <div><a href="#">Accessories</a></div>
+            <div><a href="#">Gift Cards</a></div>
+        </li>
+        <li>
+            <h3>Services</h3>
+            <div><a href="#">Apple News+ </a></div>
+            <div><a href="#">Apple TV+</a></div>
+            <div><a href="#">Apple Music</a></div>
+            <div><a href="#">Apple Arcade</a></div>
+            <div><a href="#">Apple Books</a></div>
+            <div><a href="#">Apple Card</a></div>
+            <div><a href="#">iCloud</a></div>
+            <h3>Account</h3>
+            <div><a href="#">Manage Your Apple ID </a></div>
+            <div><a href="#">Apple Store Account</a></div>
+            <div><a href="#">iCloud.com</a></div>
+        </li>
+        <li>
+            <h3>Apple Store</h3>
+           <div><a href="#">Find a Store</a></div>
+           <div><a href="#">Shop Online</a></div>
+           <div><a href="#">Genius Bar</a></div>
+           <div><a href="#">Today at Apple</a></div>
+           <div><a href="#">Apple camp</a></div>
+           <div><a href="#">Apple Store App</a></div>
+           <div><a href="#">Refurbished and Clearance</a></div>
+           <div><a href="#">Financing</a></div>
+           <div><a href="#">Apple Trade In</a></div>
+           <div><a href="#">Order Status</a></div>
+           <div><a href="#">Shopping Help</a></div>
+        </li>
+        <li>
+            <h3>For Business</h3>
+            <div><a href="#">Apple and Business</a></div>
+            <div><a href="#">Shop for Business</a></div>
+            <h3>For Education</h3>
+            <div><a href="#">Apple and Education</a></div>
+            <div><a href="#">Shop for K-12</a></div>
+            <div><a href="#">Shop for college</a></div>
+            <h3>For Healthcare</h3>
+            <div><a href="#">Apple in Healthcare</a></div>
+            <div><a href="#">Health on Apple Watch</a></div>
+            <div><a href="#">Health Record on iPhone</a></div>
+            <h3>For Government</h3>
+            <div><a href="#">Shop for Government</a></div>
+            <div><a href="#">Shop for Veterans and Military</a></div>
+            <li>
+                <h3>Apple Values</h3>
+                <div><a href="#">Accessibility</a></div>
+                <div><a href="#">Education</a></div>
+                <div><a href="#">Enviroment</a></div>
+                <div><a href="#">Inclusion and Diversity</a></div>
+                <div><a href="#">Privacy</a></div>
+                <h3>About Apple</h3>
+                <div><a href="#">Newsroom</a></div>
+                <div><a href="#">Apple Leadership</a></div>
+                <div><a href="#">Job Opportunities</a></div>
+                <div><a href="#">Investors</a></div>
+                <div><a href="#">Events</a></div>
+                <div><a href="#">Contact People</a></div>   
+            </li>
+        </ul>
+        
+        <div class=line-bottom>
+            <p>More ways to shop <a href="#">Apple Store</a> or <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.</p>
+        </div>
+        <div>
+            <p class="line-bottom2">Copyright &copy; 2020 Apple Inc All rights Reserved.<a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Sales and Refunds</a> |<a href="#">Legal</a> |<a href="#">Site Map</a> <div class="Country">United States</div></p>
+        </div>
+        
+    </div>
+    </footer>
 </body>
 
-
-<footer>
-
-
-</footer>
 </html>
